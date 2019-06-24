@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <script type="text/javascript">
+    // var grades={};
+    // grades["a"] = 90;
+    // grades["b"] = 70;
+    // grades["c"] = 65;
+
+
+    // var grades = new Object();
+    // grades["a"] = 90;
+    // grades["b"] = 70;
+    // grades["c"] = 65;
+
+
+    var grades = {"a":90, "b":70, "c":65};
+    //console.log(grades.b);
+    console.log(grades["b"]);
+
+    console.log("--------------");
+    for(var key in grades){
+      document.write(key, " ", grades[key]+" </br>");
+    }
+
+    // var grades = {
+    //   "list" : {"a":90, "b":70, "c":65},
+    //   "show" : function(){
+    //       console.log(this.list);
+    //   }
+    // }
+    //
+    // console.log(grades["list"]["c"]);
+    // grades["show"]();
+
+
+  </script>
+  <body>
+
+  </body>
+</html>

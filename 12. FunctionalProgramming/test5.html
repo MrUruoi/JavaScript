@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <script type="text/javascript">
+
+      // function outter(){
+      //   var str = "Hello, World";
+      //
+      //   function inner(){
+      //     alert(str);
+      //   }
+      //   inner();
+      // }
+      //
+      // outter();
+
+      // function factoryMovie(title){
+      //   return {
+      //     getTitle : function(){return title},
+      //     setTitle : function(_title){title = _title}
+      //   };
+      // }
+      //
+      // var totoro = factoryMovie("totoro!");
+      // var starWars = factoryMovie("wars!");
+      // console.log(totoro.getTitle());
+      // console.log(starWars.getTitle());
+      //
+      // starWars.setTitle("startWars!");
+      //
+      // console.log(totoro.getTitle());
+      // console.log(starWars.getTitle());
+
+      var arr = [];
+      // for(var i =0; i<5; i++){
+      //   arr[i] = function(){
+      //     return i;
+      //   }
+      // }
+
+      for(var i =0; i<5; i++){
+        arr[i] = function(id){
+          return function(){
+            return id;
+          }
+        }(i);
+      }
+
+      for(var index in arr){
+        console.log(arr[index]());
+      }
+
+    </script>
+  </head>
+  <body>
+
+  </body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <script type="text/javascript">
+      // // C like
+      //
+      // for(int i=0; i < 5; i++){
+      //   int a = 5;
+      // }
+      // printf("%d\n", a);        // error
+
+      for(var i=0; i<5; i++){
+        var a = 5;
+      }
+      console.log(a);             // not error
+      console.log("");
+
+      //
+      var i = 5;
+
+      function fun1(){
+          var i = 10;
+          fun2();
+      }
+
+      function fun2(){
+          document.write(i);
+      }
+
+      fun1();
+
+
+
+    </script>
+  </head>
+  <body>
+
+  </body>
+</html>

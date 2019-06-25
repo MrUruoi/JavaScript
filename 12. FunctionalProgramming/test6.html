@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <script type="text/javascript">
+
+      // function fun1(){
+      //   var sum =0;
+      //   for(var i=0; i<arguments.length; i++){
+      //     sum += arguments[i];
+      //   }
+      //   return sum;
+      // }
+      //
+      // console.log(fun1(1, 2, 3, 4, 5));
+
+
+      // function fun2(arg1){
+      //   console.log(fun2.length);
+      //   console.log(arguments.length);
+      // }
+      // fun2(1, 2, 3);
+
+      // function fun3(arg1, arg2){
+      //   return arg1 + arg2;
+      // }
+      // console.log( fun3.apply(null, [1, 2]) );
+
+      function fun4(){
+        var sum =0;
+        for(i in this){
+          sum += this[i];
+        }
+        return sum;
+      }
+      o1 = {val1: 1, vla2: 3, val3: 2};
+      o2 = {v1: 5, va2: 5, va3: 2};
+
+      console.log( fun4.apply(o1) );
+      console.log( fun4.apply(o2) );
+
+    </script>
+  </head>
+  <body>
+
+  </body>
+</html>

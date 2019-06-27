@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <script type="text/javascript">
+
+  // //Object.keys()
+  // var arr = ["a", "b", "c"];
+  // console.log("Object.keys(arr)", Object.keys(arr));
+  //
+  // //Object.prototype.toString()
+  // var o = new Object();
+  // console.log("o.toString()", o.toString(arr));
+  //
+  // var a = new Array(1, 2, 3);
+  // console.log("a.toString()", a.toString());
+
+  //Don`t use...
+  Object.prototype.contain = function(neddle){
+    for(var i in this){
+      if(this[i] === neddle){
+        return true;
+      }
+    }
+    return false;
+  }
+
+  var o = {"name":"ab", "city":"tokyo"};
+  var v = {"name":"cd", "city":"osaka"};
+
+  console.log(o.contain("ab"));
+  console.log(v.contain("ab"));
+  </script>
+  <body>
+
+  </body>
+</html>

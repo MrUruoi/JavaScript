@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <script type="text/javascript">
+
+  // function Person(name){
+  //   this.name = name;
+  // }
+  //
+  // Person.prototype.name = null;
+  // Person.prototype.introduce = function(){
+  //   return 'i am ' + this.name;
+  // }
+  //
+  // var p1 = new Person("uruoi");
+  // console.log(p1.introduce());
+
+
+  // function Person(name){
+  //   this.name = name;
+  // }
+  //
+  // Person.prototype.name = null;
+  // Person.prototype.introduce = function(){
+  //   return "i am " + this.name;
+  // }
+  //
+  // function Programmer(name){
+  //   this.name = name;
+  // }
+  //
+  // Programmer.prototype = new Person();
+  //
+  // var p1 = new Programmer("uruoi");
+  // console.log(p1.introduce());
+
+
+  function Person(name){
+    this.name = name;
+  }
+
+  Person.prototype.name = null;
+  Person.prototype.introduce = function(){
+    return "i am " + this.name;
+  }
+
+  function Programmer(name){
+    this.name = name;
+  }
+  Programmer.prototype = new Person();
+  Programmer.prototype.coding = function(){
+    return "coding.......";
+  }
+
+  var p1 = new Programmer("uruoi");
+  console.log(p1.introduce());
+  console.log(p1.coding());
+
+  </script>
+  <body>
+
+  </body>
+</html>

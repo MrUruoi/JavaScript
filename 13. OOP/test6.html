@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <script type="text/javascript">
+
+    // Object
+    // Function
+    // Array
+    // String
+    // Boolean
+    // Number
+    // Math
+    // Date
+    // RegExp
+
+    // var arr = new Array("a", "b", "c", "d", "e");
+    // function getRandom(arr){
+    //   var index = Math.floor(Math.random()*arr.length);
+    //   return arr[index];
+    // }
+    // console.log(getRandom(arr));
+
+    Array.prototype.random = function(){
+      var index = Math.floor(this.length*Math.random());
+      return this[index];
+    }
+
+    var arr = new Array("a", "b", "c", "d", "e");
+    console.log(arr.random())
+  </script>
+  <body>
+
+  </body>
+</html>
